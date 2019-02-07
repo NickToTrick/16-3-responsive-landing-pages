@@ -1,0 +1,59 @@
+@import "icomoon-variables";
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('#{$icomoon-font-path}/icomoon.eot?tfc0es');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?tfc0es#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/icomoon.ttf?tfc0es') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?tfc0es') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?tfc0es#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-right-big {
+  &:before {
+    content: $icon-right-big;
+  }
+}
+.icon-right-small {
+  &:before {
+    content: $icon-right-small;
+  }
+}
+.icon-check {
+  &:before {
+    content: $icon-check;
+  }
+}
+.icon-cart {
+  &:before {
+    content: $icon-cart;
+  }
+}
+.icon-medal {
+  &:before {
+    content: $icon-medal;
+  }
+}
+.icon-phone {
+  &:before {
+    content: $icon-phone;
+  }
+}
+

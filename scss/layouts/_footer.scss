@@ -1,0 +1,174 @@
+.footer-top-row {
+	background-color: $blue;
+	padding: 39px 0 44px 0;
+	color: $white;
+	.container {
+		display: flex;
+		align-items: center;
+		max-width: 925px;
+		@include media ('<phone') {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+	.img-block {
+		flex: 0 0 auto;
+		margin-right: 20px;
+		@include media ('<phone') {
+			margin: 0 0 20px 0;
+		}
+	}
+	.text-block {
+		line-height: 1.35;
+		letter-spacing: 0.45px;
+		@include media ('<phone') {
+			text-align: center;
+		}
+	}
+	span {
+		color: #e87c0a;
+		letter-spacing: 1px;
+		font-weight: 600;
+	}
+	p {
+		margin: 0;
+	}
+	.meno-ease & {
+		background-color: #1c1c1c;
+		span {
+			color: $purple;
+		}
+	}
+}
+.footer-bottom-row {
+	padding: 32px 0 50px;
+	background-color: #d8dff2;
+	@include media ('<tablet') {
+		padding: 30px 0 20px;
+	}
+	.container {
+		max-width: 1240px;
+	}
+	.max-q10 & {
+		.container {
+			max-width: 1125px;
+		}
+	}
+}
+.footer-list-holder {
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 8px;
+	text-align: center;
+	.title-list {
+		color: $blue;
+		font-weight: 500;
+	}
+	.footer-list {
+		@extend %listreset;
+		counter-reset: li;
+		display: inline;
+	}
+	li {
+		display: inline;
+		word-wrap: break-word;
+		margin-right: 6px;
+		&:before {
+			content: counter(li) ".";
+			counter-increment: li;
+			font-weight: 700;
+			margin-right: 4px;
+		}
+	}
+	a {
+		text-decoration: none;
+		color: #1c1c1c;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	.max-q10 & {
+		font-size: 17px;
+		.title-list {
+			display: block;
+			color: #3d3d3d;
+			font-weight: 700;
+		}
+	}
+	.meno-ease & {
+		.title-list {
+			color: $purple;
+		}
+		a {
+			color: #1c1c1c;
+		}
+	}
+}
+.footer-text {
+	display: block;
+	font-style: normal;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 30px;
+	color: #25428e;
+	font-size: 20px;
+	max-width: 992px;
+	margin: 0 auto;
+	line-height: 1.5;
+	margin-bottom: 21px;
+	a {
+		font-weight: 600;
+		color: #e87c0a;
+		text-decoration: none;
+		&:hover {
+			color: lighten(#e87c0a, 10%);
+		}
+	}
+	.max-q10 & {
+		color: #3d3d3d;
+		a, span {
+			color: #d8282c;
+		}
+		a {
+			&:hover {
+				color: lighten(#d8282c, 10%);
+			}
+		}
+	}
+	.meno-ease & {
+		color: #1c1c1c;
+		a, span {
+			color: $purple;
+		}
+		a {
+			&:hover {
+				color: lighten($purple, 15%);
+			}
+		}
+	}
+}
+.code {
+	color: #e87c0a;
+	font-weight: 600;
+}
+.partners {
+	@extend %listreset;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 1044px;
+	margin: 0 auto;
+	li {
+		margin: 0 10px 15px 10px;
+	}
+}
+.copyright {
+	color: #838997;
+	font-size: 11px;
+	line-height: 18px;
+	font-family: $poppins;
+	text-align: center;
+	margin: 15px auto 0 auto;
+	max-width: 1055px;
+}
